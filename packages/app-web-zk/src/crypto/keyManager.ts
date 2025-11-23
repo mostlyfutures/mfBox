@@ -9,7 +9,7 @@ import type { EncryptionKeys } from '../types';
 
 class KeyManager {
   private keys: EncryptionKeys | null = null;
-  private sessionStore: localforage;
+  private sessionStore: typeof localforage;
 
   constructor() {
     // Configure IndexedDB for secure key storage
